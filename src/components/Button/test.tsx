@@ -42,7 +42,7 @@ describe('<Button />', () => {
     })
   })
 
-  it('should render a icon when prop is passed', () => {
+  it('should render the button with a icon when an prop hasIcon is passed', () => {
     renderWithTheme(
       <Button
         title="Assistir Agora"
