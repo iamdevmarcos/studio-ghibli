@@ -5,58 +5,68 @@ import SocialLink from 'components/SocialLink'
 import Button from 'components/Button'
 
 import links from './content'
+import GithubCorner from 'react-github-corner'
 
 const HomeTemplate = () => (
-  <S.Wrapper>
-    <S.Container>
-      <S.MenuWrapper>
-        <Logo />
+  <>
+    <GithubCorner
+      href="https://github.com/iamdevmarcos/studio-ghibli"
+      octoColor="#fff"
+      bannerColor="#658E76"
+      target="_blank"
+    />
 
-        <S.LinksWrapper>
-          {links.map(({ icon, href, alternativeText }, index) => (
-            <SocialLink
-              key={index}
-              icon={icon}
-              alternativeText={alternativeText}
-              href={href}
-            />
-          ))}
-        </S.LinksWrapper>
-      </S.MenuWrapper>
+    <S.Wrapper>
+      <S.Container>
+        <S.MenuWrapper>
+          <Logo />
 
-      <S.Content>
-        <S.MainImage>
-          <S.Image src="/img/main-photo.png" />
-        </S.MainImage>
+          <S.LinksWrapper>
+            {links.map(({ icon, href, alternativeText }, index) => (
+              <SocialLink
+                key={index}
+                icon={icon}
+                alternativeText={alternativeText}
+                href={href}
+              />
+            ))}
+          </S.LinksWrapper>
+        </S.MenuWrapper>
 
-        <S.Info>
-          <S.Author>HAYAO MIYAZAKI</S.Author>
-          <S.Title>
-            A VIAGEM <br />
-            DE CHIHIRO
-          </S.Title>
-          <S.Description>
-            Chihiro chega a um mundo mágico dominado
-            <br /> por uma bruxa. Aqueles que a desobedecem são
-            <br /> transformados em animais.
-          </S.Description>
+        <S.Content>
+          <S.MainImage>
+            <S.Image src="/img/main-photo.png" />
+          </S.MainImage>
 
-          <S.ButtonsWrapper>
-            <Button
-              title="Assistir Agora"
-              href="https://www.netflix.com/br/title/60023642"
-              hasIcon
-            />
-            <Button
-              title="Assista o trailer"
-              href="https://www.youtube.com/watch?v=SgZI655GgHk"
-              colorScheme="secondary"
-            />
-          </S.ButtonsWrapper>
-        </S.Info>
-      </S.Content>
-    </S.Container>
-  </S.Wrapper>
+          <S.Info>
+            <S.Author>HAYAO MIYAZAKI</S.Author>
+            <S.Title>
+              A VIAGEM <br />
+              DE CHIHIRO
+            </S.Title>
+            <S.Description>
+              Chihiro chega a um mundo mágico dominado
+              <br /> por uma bruxa. Aqueles que a desobedecem são
+              <br /> transformados em animais.
+            </S.Description>
+
+            <S.ButtonsWrapper>
+              <Button
+                title="Assistir Agora"
+                href="https://www.netflix.com/br/title/60023642"
+                hasIcon
+              />
+              <Button
+                title="Assista o trailer"
+                href="https://www.youtube.com/watch?v=SgZI655GgHk"
+                colorScheme="secondary"
+              />
+            </S.ButtonsWrapper>
+          </S.Info>
+        </S.Content>
+      </S.Container>
+    </S.Wrapper>
+  </>
 )
 
 export default HomeTemplate
