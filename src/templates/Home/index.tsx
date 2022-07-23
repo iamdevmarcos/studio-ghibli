@@ -4,6 +4,7 @@ import Logo from 'components/Logo'
 import SocialLink from 'components/SocialLink'
 
 import links from './content'
+import Button from 'components/Button'
 
 const HomeTemplate = () => (
   <S.Wrapper>
@@ -34,6 +35,8 @@ const HomeTemplate = () => (
           Chihiro chega a um mundo mágico dominado por uma bruxa. Aqueles que a
           desobedecem são transformados em animais.
         </S.Description>
+
+        <Button title="Assistir Agora" />
       </S.Info>
     </S.Content>
   </S.Wrapper>
