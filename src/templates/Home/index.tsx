@@ -7,16 +7,35 @@ import links from './content'
 
 const HomeTemplate = () => (
   <S.Wrapper>
-    <Logo />
+    <S.MenuWrapper>
+      <Logo />
 
-    {links.map(({ icon, href, alternativeText }, index) => (
-      <SocialLink
-        key={index}
-        icon={icon}
-        alternativeText={alternativeText}
-        href={href}
-      />
-    ))}
+      <S.LinksWrapper>
+        {links.map(({ icon, href, alternativeText }, index) => (
+          <SocialLink
+            key={index}
+            icon={icon}
+            alternativeText={alternativeText}
+            href={href}
+          />
+        ))}
+      </S.LinksWrapper>
+    </S.MenuWrapper>
+
+    <S.Content>
+      <S.MainImage>
+        <S.Image src="/img/main-photo.png" />
+      </S.MainImage>
+
+      <S.Info>
+        <S.Author>HAYAO MIYAZAKI</S.Author>
+        <S.Title>A VIAGEM DE CHIHIRO</S.Title>
+        <S.Description>
+          Chihiro chega a um mundo mágico dominado por uma bruxa. Aqueles que a
+          desobedecem são transformados em animais.
+        </S.Description>
+      </S.Info>
+    </S.Content>
   </S.Wrapper>
 )
 
