@@ -1,10 +1,11 @@
-import { render, screen } from '@testing-library/react'
+import { screen } from '@testing-library/react'
+import { renderWithTheme } from 'utils/tests/renderWithTheme'
 
 import Button from '.'
 
 describe('<Button />', () => {
   it('should render a default button', () => {
-    render(
+    renderWithTheme(
       <Button
         title="Assistir Agora"
         href="https://www.netflix.com/br/title/60023642"
@@ -28,7 +29,7 @@ describe('<Button />', () => {
   })
 
   it('should render a secondary button when color scheme is passed', () => {
-    render(
+    renderWithTheme(
       <Button
         title="Assistir Agora"
         href="https://www.netflix.com/br/title/60023642"
@@ -42,7 +43,7 @@ describe('<Button />', () => {
   })
 
   it('should render a icon when prop is passed', () => {
-    render(
+    renderWithTheme(
       <Button
         title="Assistir Agora"
         href="https://www.netflix.com/br/title/60023642"

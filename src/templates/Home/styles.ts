@@ -25,10 +25,7 @@ export const Content = styled.div`
   /* background: red; */
 `
 
-export const MainImage = styled.div`
-  /* max-width: 31.25rem; // 500px
-  max-height: 200px; // 370px */
-`
+export const MainImage = styled.div``
 
 export const Image = styled.img`
   width: 100%;

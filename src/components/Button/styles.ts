@@ -1,11 +1,11 @@
-import styled, { css } from 'styled-components'
+import styled, { css, DefaultTheme } from 'styled-components'
 import { ButtonProps } from '.'
 
 type WrapperProps = Pick<ButtonProps, 'colorScheme'>
 
 const wrapperModifiers = {
-  default: () => css`
-    background-color: #658e76;
+  default: (theme: DefaultTheme) => css`
+    background-color: ${theme.colors.green};
   `,
 
   secondary: () => css`
@@ -14,22 +14,22 @@ const wrapperModifiers = {
 }
 
 export const Wrapper = styled.a<WrapperProps>`
-  ${({ colorScheme }) => css`
+  ${({ colorScheme, theme }) => css`
     display: flex;
     align-items: center;
     justify-content: center;
 
-    ${wrapperModifiers[colorScheme!]}
+    ${wrapperModifiers[colorScheme!](theme)}
 
     width: 100%;
     height: 4rem;
 
-    color: #f9f9f9;
+    color: ${theme.colors.white};
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;
 
-    border: 2px solid #658e76;
+    border: 2px solid ${theme.colors.green};
     cursor: pointer;
 
     span {
