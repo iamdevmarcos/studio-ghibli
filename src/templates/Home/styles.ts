@@ -22,12 +22,12 @@ export const LinksWrapper = styled.div`
 `
 
 export const Content = styled.div`
-  background: red;
+  /* background: red; */
 `
 
 export const MainImage = styled.div`
-  max-width: 31.25rem; // 500px
-  max-height: 23.125rem; // 370px
+  /* max-width: 31.25rem; // 500px
+  max-height: 200px; // 370px */
 `
 
 export const Image = styled.img`
@@ -35,19 +35,35 @@ export const Image = styled.img`
   height: 100%;
 `
 
-export const Info = styled.div``
-
-export const Author = styled.h2`
+export const Info = styled.div`
   ${({ theme }) => css`
     color: ${theme.colors.white};
 
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 27px;
+    margin-top: -2.5rem;
   `}
 `
 
-export const Title = styled.h1``
+export const Author = styled.h2`
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.688rem;
 
-export const Description = styled.p``
+  margin-bottom: 1rem;
+`
+
+export const Title = styled.h1`
+  font-style: normal;
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 109%;
+
+  margin-bottom: 1rem;
+`
+
+export const Description = styled.p`
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 180%;
+`
