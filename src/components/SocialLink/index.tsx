@@ -8,7 +8,7 @@ type SocialLinkProps = {
 
 const SocialLink = ({ href, alternativeText, icon }: SocialLinkProps) => (
   <S.Wrapper href={href} target="_blank">
-    <S.Image src={`/public/img/icons/${icon}`} alt={alternativeText} />
+    <S.Image src={`/img/icons/${icon}.png`} alt={alternativeText} />
   </S.Wrapper>
 )
 
