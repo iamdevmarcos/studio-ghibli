@@ -1,8 +1,10 @@
 import * as S from './styles'
 
+import Logo from 'components/Logo'
+
 const HomeTemplate = () => (
   <S.Wrapper>
-    <h1>dad</h1>
+    <Logo />
   </S.Wrapper>
 )
 
