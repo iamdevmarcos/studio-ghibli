@@ -43,8 +43,21 @@ export const Content = styled.div`
 `
 
 export const MainImage = styled.div`
+  animation: floating 5s ease-in-out infinite;
+
+  @keyframes floating {
+    0% {
+      transform: translateX(0);
+    }
+    66% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
   @media (min-width: 1000px) {
-    /* background: blue; */
     flex: 1;
   }
 `
