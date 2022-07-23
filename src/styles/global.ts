@@ -7,6 +7,12 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
   
+  html {
+    @media (min-width: 100px) and (max-width: 380px) {
+      font-size: 80%;
+    }
+  }
+
   body {
     font-family: 'Poppins', sans-serif
   }

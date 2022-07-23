@@ -42,6 +42,10 @@ export const Wrapper = styled.a<WrapperProps>`
     &:hover {
       opacity: 0.6;
     }
+
+    @media (min-width: 1000px) {
+      width: 300px;
+    }
   `}
 `
 

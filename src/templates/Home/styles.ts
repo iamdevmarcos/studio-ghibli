@@ -7,6 +7,13 @@ export const Wrapper = styled.div`
   padding: 1.875rem 1.563rem;
 `
 
+export const Container = styled.div`
+  @media (min-width: 1000px) {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+`
+
 export const MenuWrapper = styled.div`
   display: flex;
   align-items: center;
@@ -22,10 +29,25 @@ export const LinksWrapper = styled.div`
 `
 
 export const Content = styled.div`
-  /* background: red; */
+  @media (min-width: 1000px) {
+    margin-top: 100px;
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    /* gap: 10rem; */
+
+    /* background: red; */
+  }
 `
 
-export const MainImage = styled.div``
+export const MainImage = styled.div`
+  @media (min-width: 1000px) {
+    /* background: blue; */
+    flex: 1;
+  }
+`
 
 export const Image = styled.img`
   width: 100%;
@@ -37,6 +59,8 @@ export const Info = styled.div`
     color: ${theme.colors.white};
 
     margin-top: -2.5rem;
+    /* background: green; */
+    flex: 1;
   `}
 `
 
@@ -56,6 +80,11 @@ export const Title = styled.h1`
   line-height: 109%;
 
   margin-bottom: 1rem;
+
+  @media (min-width: 1000px) {
+    font-size: 6rem;
+    line-height: auto;
+  }
 `
 
 export const Description = styled.p`
@@ -65,6 +94,10 @@ export const Description = styled.p`
   line-height: 180%;
 
   margin-bottom: 2.813rem;
+
+  @media (min-width: 1000px) {
+    font-size: 1.3rem;
+  }
 `
 
 export const ButtonsWrapper = styled.div`
@@ -75,4 +108,9 @@ export const ButtonsWrapper = styled.div`
   gap: 1rem;
 
   margin-bottom: 2rem;
+
+  @media (min-width: 1000px) {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
 `
