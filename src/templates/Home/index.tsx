@@ -2,9 +2,9 @@ import * as S from './styles'
 
 import Logo from 'components/Logo'
 import SocialLink from 'components/SocialLink'
+import Button from 'components/Button'
 
 import links from './content'
-import Button from 'components/Button'
 
 const HomeTemplate = () => (
   <S.Wrapper>
@@ -36,7 +36,18 @@ const HomeTemplate = () => (
           desobedecem são transformados em animais.
         </S.Description>
 
-        <Button title="Assistir Agora" />
+        <S.ButtonsWrapper>
+          <Button
+            title="Assistir Agora"
+            href="https://www.netflix.com/br/title/60023642"
+            hasIcon
+          />
+          <Button
+            title="Assista o trailer"
+            href="https://www.youtube.com/watch?v=SgZI655GgHk"
+            colorScheme="secondary"
+          />
+        </S.ButtonsWrapper>
       </S.Info>
     </S.Content>
   </S.Wrapper>

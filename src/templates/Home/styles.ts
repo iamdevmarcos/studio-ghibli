@@ -66,4 +66,16 @@ export const Description = styled.p`
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 180%;
+
+  margin-bottom: 2.813rem;
+`
+
+export const ButtonsWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  margin-bottom: 2rem;
 `
